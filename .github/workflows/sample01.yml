@@ -6,5 +6,6 @@ jobs:
   job1:
    runs-on: ubuntu-latest
    steps:
-        - run: echo 'Hello'
+        - uses: actions/checkout@v2.4.0
+        - run: pwsh -File dateandtime.ps1
     
